@@ -3,13 +3,13 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
-sangjin/[Ll]ibrary/
-sangjin/[Tt]emp/
-sangjin/[Oo]bj/
-sangjin/[Bb]uild/
-sangjin/[Bb]uilds/
-sangjin/[Ll]ogs/
-sangjin/[Uu]ser[Ss]ettings/
+MJsec_Unity_Mentoring/[Ll]ibrary/
+MJsec_Unity_Mentoring/[Tt]emp/
+MJsec_Unity_Mentoring/[Oo]bj/
+MJsec_Unity_Mentoring/[Bb]uild/
+MJsec_Unity_Mentoring/[Bb]uilds/
+MJsec_Unity_Mentoring/[Ll]ogs/
+MJsec_Unity_Mentoring/[Uu]ser[Ss]ettings/
 *.log
 
 # MemoryCaptures can get excessive in size.
