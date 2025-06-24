@@ -1,0 +1,34 @@
+1주차 : 기본 게임 오브젝트의 요소1(움직임 제어)
+-Scripts 및 object 제작 
+-Mono Behaviour class
+-RigidBody
+-Collider
+-[SerializeField] & [Header]
+-움직임 제어
+-충돌 제어
+
+2주차 : 기본 게임 오브젝트의 요소2(이미지 제어)
+-Prefabs
+-Sprite Renderer
+-animation & animator
+-Audio Source
+
+
+3주차 : UI 기본 요소
+-Canvas 
+-UI Image
+-Button
+-Slider
+
+4주차 : Save 파일에 관련한 요소 & Photon 서버를 이용한 멀티 요소
+- json 사용
+- PlayerPrefab
+-photon 서버 사용
+
+5주차 : 게임 기획 
+
+6주차, 7주차, 8주차 : 게임 제작 실습 
+
+- 쿠키런 / 닌자 머스트 다이 등등 
+
+
