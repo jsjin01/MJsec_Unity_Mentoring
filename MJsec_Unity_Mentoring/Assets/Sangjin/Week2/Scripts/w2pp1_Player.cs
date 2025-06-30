@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class w1pp1_Player : MonoBehaviour
+public class w2pp1_Player : MonoBehaviour
 {
     [Header("예시")]
     [SerializeField] Rigidbody2D rb;

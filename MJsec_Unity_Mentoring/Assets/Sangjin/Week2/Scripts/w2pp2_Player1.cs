@@ -1,7 +1,8 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class w1pp2_Player : MonoBehaviour
+public class w2pp2_Player : MonoBehaviour
 {
     [Header("예시")]
     [SerializeField] Rigidbody2D rb;
@@ -9,6 +10,7 @@ public class w1pp2_Player : MonoBehaviour
     [SerializeField] float jumpForce = 7f;
 
     bool isGrounded = false;
+    bool isDashable = true;
 
     void Start()
     {
@@ -28,6 +30,11 @@ public class w1pp2_Player : MonoBehaviour
             rb.AddForce(Vector2.up * rb.gravityScale * jumpForce, ForceMode2D.Impulse);
             isGrounded = false;
         }
+        else if (Input.GetKeyDown(KeyCode.Space) && isDashable)
+        {
+            rb.transform.position += new Vector3 (moveX * 3, 0f);
+            StartCoroutine(Cooltime());
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -42,6 +49,13 @@ public class w1pp2_Player : MonoBehaviour
             Destroy(collision.gameObject);
             Debug.Log("적 제거!!!");
         }
+    }
+
+    IEnumerator Cooltime()
+    {
+        isDashable = false;
+        yield return new WaitForSeconds(3f);
+        isDashable = true ;
     }
 }
 
