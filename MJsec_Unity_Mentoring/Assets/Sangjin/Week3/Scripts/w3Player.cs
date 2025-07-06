@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class w3Player : MonoBehaviour
@@ -30,9 +31,10 @@ public class w3Player : MonoBehaviour
             isGrounded = true;
             anit.SetBool("jump", false);
         }
-        
+
         if (collision.gameObject.CompareTag("Cactus"))
         {
+            hp -= 1;
             if (hp == 0)
             {
                 Debug.Log($"사망");
@@ -41,7 +43,6 @@ public class w3Player : MonoBehaviour
             else
             {
                 anit.SetTrigger("hit");
-                hp -= 1;
                 Debug.Log($"남은 체력 : {hp}");
             }
         }

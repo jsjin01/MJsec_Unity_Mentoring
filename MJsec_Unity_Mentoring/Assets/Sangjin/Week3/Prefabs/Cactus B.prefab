@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5464352770630742804}
   - component: {fileID: 7416907799331073500}
   - component: {fileID: 3997079367593130537}
+  - component: {fileID: 8307141233290471622}
   m_Layer: 0
   m_Name: Cactus B
   m_TagString: Cactus
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -162,3 +163,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3125, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!114 &8307141233290471622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910319736262038104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a408e089e55e84bbcc78e7b5206b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 2

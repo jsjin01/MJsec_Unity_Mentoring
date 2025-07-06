@@ -15,9 +15,9 @@ public class w3BackGround : MonoBehaviour
         transform.Translate(Vector3.left * scrollSpeed * Time.deltaTime);
 
         // 일정 위치를 지나면 다시 오른쪽으로 이동시킴 (재사용)
-        if (transform.position.x < -15.5f)
+        if (transform.position.x < -12f)
         {
-            transform.position = new Vector3(0f, transform.position.y , 0);
+            transform.position = new Vector3(10f, transform.position.y , 0);
         }
     }
 }
