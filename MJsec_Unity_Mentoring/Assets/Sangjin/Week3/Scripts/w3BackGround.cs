@@ -20,4 +20,9 @@ public class w3BackGround : MonoBehaviour
             transform.position = new Vector3(10f, transform.position.y , 0);
         }
     }
+
+    public void StopBackGround()
+    {
+        scrollSpeed = 0;
+    }
 }

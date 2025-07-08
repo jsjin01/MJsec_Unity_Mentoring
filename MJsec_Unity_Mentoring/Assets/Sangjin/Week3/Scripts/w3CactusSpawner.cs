@@ -22,4 +22,9 @@ public class w3CactusSpawner : MonoBehaviour
         GameObject catcus = Instantiate(catcuses[num], new Vector3(4f, -0.8f, 0), Quaternion.identity);
         catcus.transform.SetParent(parent.transform);
     }
+
+    public void StopSpawning()
+    {
+        CancelInvoke("Spawn");
+    }
 }
